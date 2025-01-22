@@ -1,10 +1,31 @@
 /* General styles */
 body {
-  font-family: "Abel", sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #000000;
+  overscroll-behavior: none;
+}
+
+body h1 {
+  font-family: "Cantarell", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.highlight {
+  color: #007bff; /* Replace this with your desired color */
+  font-weight: bold; /* Optional: Make it bold for emphasis */
+}
+
+body p {
+  font-family: "Abel", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Header */
@@ -19,13 +40,14 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8rem;
+  margin: 0.5rem;
+  font-size: 2.25rem;
   font-family: "Cantarell", sans-serif;
 }
 
 .header-buttons {
-  margin-top: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .header-buttons .button {
@@ -34,7 +56,7 @@ header h1 {
   display: inline-block;
   margin: 0 10px;
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -42,12 +64,12 @@ header h1 {
 }
 
 .header-buttons .button:hover {
-  background-color: #161616;
+  background-color: #272727;
 }
 
 /* Navigation */
 nav {
-  margin: 1rem 0;
+  margin: auto;
   text-align: center;
 }
 
@@ -68,17 +90,16 @@ nav button.active {
 
 /* Main content */
 section {
-  padding: 2rem;
+  padding: 0.5rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 div.full-width {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(134, 44, 44);
-  border-color: blue;
   margin-inline: auto;
 }
 
@@ -93,6 +114,42 @@ img {
   max-width: 13rem;
   height: auto;
   border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.two-column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 1rem; /* Spacing between items */
+}
+
+.item:nth-child(even) {
+  margin-top: 10rem; /* Offsets odd items downwards */
+}
+
+.item {
+  color: #fff;
+  text-align: center;
+}
+
+.item h1 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.item p {
+  font-size: 1rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.item img:hover {
+  transform: scale(1.02); /* Increases the image size by 10% */
 }
 
 /* Footer */
@@ -100,8 +157,41 @@ footer {
   background-color: #000000;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
+}
+
+footer p {
+  font-family: "Abel", sans-serif;
+  line-height: 1;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Style for the contact popup */
+.contact-popup {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 65px; /* Adjust this value based on your layout */
+  right: 0;
+  width: 12.5rem;
+  height: auto; /* Adjust the height as needed */
+  z-index: 10; /* Ensure it's on top of other content */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+}
+
+/* Style for the icons */
+.contact-icon {
+  font-size: 2rem; 
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  /* margin: auto; */
+}
+
+.contact-icon:hover {
+  color: #007bff; /* Change color on hover */
 }
