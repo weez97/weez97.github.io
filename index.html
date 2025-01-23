@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Luis Pineda's portfolio. Game developer from Peru."
+    />
+    <meta
+      name="keywords"
+      content="game developer, unity, c#, portfolio, luis pineda"
+    />
+    <link rel="icon" href="favicon.ico" />
     <title>Portfolio | Luis Pineda</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Abel&display=swap"
@@ -21,10 +30,11 @@
       </a>
       <div class="header-buttons">
         <a
-          href="LPK_Resume2025.pdf"
+          href="https://drive.google.com/drive/folders/1IqcUeBTdjL8mumhEZDF_Y3x7gi8C3LeX?usp=drive_link"
           class="button"
-          download="LPK_Resume2025.pdf"
-          title="Click to download"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View my resume on Google Drive"
         >
           Resume
         </a>
@@ -43,7 +53,7 @@
         </div>
       </div>
     </header>
-    <section id="content">
+    <section id="greeting">
       <div class="full-width">
         <h1>Welcome to my portfolio!</h1>
         <p>
@@ -53,27 +63,83 @@
         </p>
       </div>
     </section>
-    <section id="content">
-      <div class="two-column-container">
-        <div class="item">
-          <img src="kaiyujump.png" />
-          <h1>Kaiju Jump (2023)</h1>
-          <p>
-            Hyper casual jumping game. API implementation for Leaderboard
-            services, 2D physics and custom systems.
-          </p>
+    <section id="full-games">
+      <h2>Full games</h2>
+      <div class="grid-container">
+        <div class="column-container" id="full-games-left">
+          <div class="item">
+            <img src="kaiyujump.png" />
+            <h1>Kaiju Jump (2023)</h1>
+            <h2>Work in progress</h2>
+            <p>
+              Hyper casual jumping game. API implementation for Leaderboard
+              services, 2D physics and custom systems.
+            </p>
+          </div>
         </div>
-        <div class="item">
-          <img src="cafepanic.jpeg" />
-          <h1>Cafe Panic (2022)</h1>
-          <p>
-            Casual cooking developed in Unity. Deployed new mechanics,
-            overhauled UI and developed tools using spreadsheets for data
-            management and integration.
-          </p>
+        <div
+          style="margin-top: 40%"
+          class="column-container"
+          id="full-games-right"
+        >
+          <div class="item">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.Boomware.CafePanic&hl=es&pli=1"
+              class="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="cafepanic.jpeg" />
+            </a>
+            <h1>Cafe Panic (2022)</h1>
+            <p>
+              Casual cooking developed in Unity. Deployed new mechanics,
+              overhauled UI and developed tools using spreadsheets for data
+              management and integration.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- <section id="prototypes">
+      <h2>Prototypes</h2>
+      <div class="grid-container">
+        <div class="column-container" id="prototypes-left">
+          <div class="item">
+            <img src="kaiyujump.png" />
+            <h1>Kaiju Jump (2023)</h1>
+            <h2>Work in progress</h2>
+            <p>
+              Hyper casual jumping game. API implementation for Leaderboard
+              services, 2D physics and custom systems.
+            </p>
+          </div>
+        </div>
+        <div
+          style="margin-top: 40%"
+          class="column-container"
+          id="prototypes-right"
+        >
+          <div class="item">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.Boomware.CafePanic&hl=es&pli=1"
+              class="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="cafepanic.jpeg" />
+            </a>
+            <h1>Cafe Panic (2022)</h1>
+            <p>
+              Casual cooking developed in Unity. Deployed new mechanics,
+              overhauled UI and developed tools using spreadsheets for data
+              management and integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <div class="filler"></div>
     <footer>
       <p>&copy; <span id="year"></span> Luis Pineda. All rights reserved.</p>
     </footer>

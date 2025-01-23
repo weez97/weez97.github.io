@@ -1,7 +1,9 @@
-/* General styles */
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
   overscroll-behavior: none;
 }
@@ -15,9 +17,18 @@ body h1 {
   text-align: center;
 }
 
+body h2 {
+  font-family: "Cantarell", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .highlight {
-  color: #007bff; /* Replace this with your desired color */
-  font-weight: bold; /* Optional: Make it bold for emphasis */
+  color: #007bff;  
+  font-weight: bold;
 }
 
 body p {
@@ -28,7 +39,6 @@ body p {
   text-align: center;
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,7 +77,6 @@ header h1 {
   background-color: #272727;
 }
 
-/* Navigation */
 nav {
   margin: auto;
   text-align: center;
@@ -90,9 +99,17 @@ nav button.active {
 
 /* Main content */
 section {
-  padding: 0.5rem;
+  padding: 0rem;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.grid-container {
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+  height: fit-content;
 }
 
 div.full-width {
@@ -117,19 +134,16 @@ img {
   margin-top: 1rem;
 }
 
-.two-column-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 1rem; /* Spacing between items */
-}
-
-.item:nth-child(even) {
-  margin-top: 10rem; /* Offsets odd items downwards */
+.column-container {
+  display: grid; 
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .item {
   color: #fff;
   text-align: center;
+  max-height: fit-content;
 }
 
 .item h1 {
@@ -137,22 +151,27 @@ img {
   font-size: 1.25rem;
 }
 
+.item h2 {
+  text-transform: uppercase;
+  font-size: .75rem;
+  margin-top: -1.25rem;
+}
+
 .item p {
   font-size: 1rem;
 }
 
 .item img {
-  width: 100%;
+  width: 95%;
   height: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  transition: transform 0.3s ease; 
 }
 
 .item img:hover {
-  transform: scale(1.02); /* Increases the image size by 10% */
+  transform: scale(1.02); 
 }
 
-/* Footer */
 footer {
   background-color: #000000;
   color: #fff;
@@ -169,29 +188,31 @@ footer p {
   font-size: 1rem;
 }
 
-/* Style for the contact popup */
-.contact-popup {
-  display: none; /* Initially hidden */
-  position: absolute;
-  top: 65px; /* Adjust this value based on your layout */
-  right: 0;
-  width: 12.5rem;
-  height: auto; /* Adjust the height as needed */
-  z-index: 10; /* Ensure it's on top of other content */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; 
+.filler {
+  height: 100%;
+  flex: 1;
 }
 
-/* Style for the icons */
+.contact-popup {
+  display: none; 
+  position: absolute;
+  top: 65px; 
+  right: 0;
+  width: 12.5rem;
+  height: auto;
+  z-index: 10; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
 .contact-icon {
-  font-size: 2rem; 
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   padding: 15px;
-  /* margin: auto; */
 }
 
 .contact-icon:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff; 
 }
