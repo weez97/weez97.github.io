@@ -13,8 +13,11 @@ async function loadPortfolio() {
 
     container.innerHTML = "";
 
-    data.projects.forEach(project => {
+    data.projects.forEach((project, index) => {
         const fragment = template.content.cloneNode(true);
+
+        const card = fragment.querySelector(".portfolio__element");
+        card.style.setProperty("--i", index);
 
         if (project.ref && project.ref.trim() !== "") {
             fragment.querySelector(".portfolio__element").href = project.ref;

@@ -651,6 +651,21 @@ footer {
     transform 0.25s ease,
     box-shadow 0.25s ease;
   will-change: transform;
+
+  opacity: 0;
+  animation: elementReveal 1s ease forwards;
+  animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes elementReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .portfolio__element:hover {
@@ -864,6 +879,8 @@ footer {
   margin-top: clamp(20px, 4vh, 60px);
   z-index: 2;
   position: relative;
+
+  animation: aboutContentReveal 1.2s ease-out forwards;
 }
 
 .page__title {
@@ -879,5 +896,9 @@ footer {
   font-size: min(4vw, 1.5rem);
   color: white;
   text-align: center;
+  opacity: 0;
+
+  animation: aboutContentReveal 1.2s ease-out forwards;
+  animation-delay: 0.75s;
 }
 /* #endregion */

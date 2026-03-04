@@ -3,6 +3,8 @@ const LINKS = {
   portfolio: "/portfolio.html",
   home: "/",
   about: "/#about",
+  contact: "www.linkedin.com/in/luispineda597",
+  github: "https://github.com/weez97"
 };
 
 document.querySelectorAll("[data-link]").forEach(el => {
