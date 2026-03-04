@@ -1,8 +1,8 @@
 const LINKS = {
-  resume: "https://drive.google.com/drive/folders/XXXXXXXX",
+  resume: "https://drive.google.com/drive/https://drive.google.com/drive/folders/1IqcUeBTdjL8mumhEZDF_Y3x7gi8C3LeX?usp=sharing/XXXXXXXX",
   portfolio: "/portfolio.html",
   home: "/",
-  about: "/index.html/#about",
+  about: "/#about",
 };
 
 document.querySelectorAll("[data-link]").forEach(el => {
