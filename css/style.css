@@ -717,6 +717,7 @@ footer {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
+  line-clamp: 5;
   font-size: 1.1em;
   margin-top: 0.5em;
   text-shadow:
