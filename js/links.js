@@ -1,5 +1,5 @@
 const LINKS = {
-  resume: "https://drive.google.com/drive/https://drive.google.com/drive/folders/1IqcUeBTdjL8mumhEZDF_Y3x7gi8C3LeX?usp=sharing/XXXXXXXX",
+  resume: "https://drive.google.com/drive/folders/1IqcUeBTdjL8mumhEZDF_Y3x7gi8C3LeX?usp=sharing",
   portfolio: "/portfolio.html",
   home: "/",
   about: "/#about",
