@@ -12,15 +12,18 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="menu">
       <div class="menu__inner">
         <a class="menu__logo" data-link="home">LPK</a>
         <nav class="menu__nav" aria-label="Primary navigation">
-          <a class="menu__link" data-link="portfolio" data-i18n="portfolio"
-            >Portfolio</a
-          >
-          <a class="menu__link" href="#about" data-i18n="about">About me</a>
+          <a class="menu__link" href="#portfolio" data-i18n="portfolio">
+            Portfolio
+          </a>
+          <a class="menu__link" data-link="about" data-i18n="about">
+            About me
+          </a>
           <a
             class="menu__link"
             data-link="resume"
@@ -44,10 +47,12 @@
       </div>
       <!-- mobile menu drawer -->
       <div class="menu__mobile">
-        <a class="menu__mobileLink" data-link="portfolio" data-i18n="portfolio"
-          >Portfolio</a
-        >
-        <a class="menu__mobileLink" href="#about" data-i18n="about">About me</a>
+        <a class="menu__mobileLink" href="#portfolio" data-i18n="portfolio">
+          Portfolio
+        </a>
+        <a class="menu__mobileLink" data-link="about" data-i18n="about">
+          About me
+        </a>
         <a class="menu__mobileLink menu__mobileLink--drive" data-link="resume">
           <span data-i18n="resume">Resume</span>
           <img
@@ -62,47 +67,24 @@
         >
       </div>
     </header>
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title" data-text="Luis Pineda">Luis Pineda</h1>
-        <h2 class="hero__subtitle">Senior Unity & Web Developer</h2>
+    <section id="portfolio" class="portfolio">
+      <div class="page__titleHolder">
+        <h1 class="section__title page__title" data-i18n="portfolio">
+          Portfolio
+        </h1>
       </div>
-      <a class="hero__cta" data-link="portfolio" data-i18n="heroCTA"
-        >Explore my portfolio</a
-      >
-    </section>
-    <section id="about" class="about">
-      <div class="about__content">
-        <div class="about__group">
-          <div class="section__textCombo">
-            <h1 class="section__title" data-i18n="about">About Me</h1>
-            <p class="section__text" data-i18n="aboutDesc">
-              Hi! I’m Luis Pineda, a
-              <span
-                class="textpainter"
-                style="--c1: #ff0000; --c2: #ffffff; --c3: #ff0000"
-                >Peruvian</span
-              >
-              game developer and software engineer based in Tampa, FL. I
-              specialize in Unity, mobile development, and slots games with real
-              casino production experience. I focus on smooth, optimized
-              gameplay and clean, reusable code. <br /><br />
-              I also know my way around HTML, CSS and Web Design and Development
-              - I made this website from scratch! <br /><br />
-              Feel free to explore my projects and prototypes! Did my skills
-              catch your eye? Let's talk!
-            </p>
-          </div>
-        </div>
-        <div class="about__group">
-          <div class="about__pfpWrapper">
-            <img
-              class="about__pfp"
-              src="./images/pictures/lpk_pfp.webp"
-              alt="Profile picture of Luis Pineda"
-            />
-          </div>
-        </div>
+      <div class="portfolio__content">
+        <div class="page__text" data-i18n="portfolioDesc">portfolioDesc</div>
+        <div id="portfolio__grid" class="portfolio__grid"></div>
+        <template id="portfolio-template">
+          <a class="portfolio__element">
+            <img class="portfolio__element--picture" src="" alt="" />
+            <div class="portfolio__element--title"></div>
+            <div class="portfolio__element--location"></div>
+            <div class="portfolio__element--text"></div>
+            <div class="portfolio__element--tagLine"></div>
+          </a>
+        </template>
       </div>
     </section>
     <footer>
@@ -111,9 +93,8 @@
         <span data-i18n="footer">Luis Pineda. All rights reserved.</span>
       </p>
     </footer>
+    <script src="./js/portfolio_grid.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/hero-title.js"></script>
-    <script src="./js/about.js"></script>
     <script src="./js/year-updater.js"></script>
     <script src="./js/links.js"></script>
     <script src="./js/i18n.js"></script>

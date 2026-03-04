@@ -1,0 +1,107 @@
+{
+    "projects": [
+        {
+            "image": "./images/pictures/gdp.webp",
+            "ref": "https://www.gdpstudios.org/",
+            "company": "GDP Studios",
+            "year": "2025",
+            "location": "PE",
+            "description": "gdp_description",
+            "title": "gdp_title",
+            "tags": {
+                "os": [
+                    "Linux"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#"
+                ],
+                "nda": true
+            },
+            "type": 0
+        },
+        {
+            "image": "./images/pictures/kaiju_jump.webp",
+            "ref": "",
+            "company": "Calle Uno Studios",
+            "year": "2023",
+            "location": "PE",
+            "description": "calleuno_description",
+            "title": "calleuno_title",
+            "tags": {
+                "os": [
+                    "iOS",
+                    "Android"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#"
+                ],
+                "nda": false
+            },
+            "type": 0
+        },
+        {
+            "image": "./images/pictures/cafepanic.gif",
+            "ref": "https://play.google.com/store/apps/details?id=com.Boomware.CafePanic",
+            "company": "Boomware Studios",
+            "year": "2021",
+            "location": "PE",
+            "description": "boomware_description",
+            "title": "boomware_title",
+            "tags": {
+                "os": [
+                    "iOS",
+                    "Android"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#",
+                    "AppScript"
+                ],
+                "nda": false
+            },
+            "type": 0
+        },
+        {
+            "image": "./images/pictures/hopper-prot.gif",
+            "ref": "https://weez97.itch.io/planet-hopper-prototype",
+            "company": "",
+            "year": "2020",
+            "location": "PE",
+            "description": "planethopper_description",
+            "title": "planethopper_title",
+            "tags": {
+                "os": [
+                    "WebGL"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#"
+                ],
+                "nda": false
+            },
+            "type": 1
+        },
+        {
+            "image": "./images/pictures/valentine.gif",
+            "ref": "https://github.com/weez97/BeMyValentine",
+            "company": "",
+            "year": "2025",
+            "location": "PE",
+            "description": "valentine2025_description",
+            "title": "valentine2025_title",
+            "tags": {
+                "os": [
+                    "MacOS"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#"
+                ],
+                "nda": false
+            },
+            "type": 1
+        }
+    ]
+}

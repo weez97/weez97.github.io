@@ -1,0 +1,46 @@
+{
+    "texts": {
+        "ENG": {
+            "portfolio": "Portfolio",
+            "about": "About me",
+            "resume": "Resume",
+            "contact": "Contact",
+            "heroCTA": "Explore my portfolio",
+            "aboutDesc": "Hi! I’m Luis Pineda, a <span class=\"textpainter\" style=\"--c1: #ff0000; --c2: #ffffff; --c3: #ff0000\">Peruvian</span> game developer and software engineer based in Tampa, FL. I specialize in Unity, mobile development, and slots games with real casino production experience. I focus on smooth, optimized gameplay and clean, reusable code. <br/><br/>I also know my way around HTML, CSS and Web Design and Development - I made this website from scratch! <br/><br/>Feel free to explore my projects and prototypes! Did my skills catch your eye? Let's talk!",
+            "footer": "Made with ❤️ by Luis Pineda Knox. All rights reserved.",
+            "portfolioDesc": "Here are some of my projects and prototypes.",
+            "nda_tooltip":"Project under NDA. Details cannot be publicly disclosed. Images are referential",
+            "gdp_description": "Developed for real world casinos across US, Canada, Mexico, among others. Implemented new features, optimized existing code and fixed bugs in live games. Reworked several systems to improve performance and maintainability.",
+            "gdp_title": "Several slot games",
+            "calleuno_description": "Hyper casual jumping game. API implementation for Leaderboard services, 2D physics and custom systems. Complete deployment to Google Play Store and Apple App Store test platforms.",
+            "calleuno_title": "Kaiyu Jump",
+            "boomware_description": "Casual cooking game with over 10M downloads. Deployed new mechanics, limited-time events, overhauled UI and developed tools for data management and inyection.",
+            "boomware_title": "Cafe Panic",
+            "planethopper_description": "Made over a few hours for web deployment practice. Simple endless hopper game with janky 2D physics.",
+            "planethopper_title": "Planet Hopper",
+            "valentine2025_description": "Custom sliding puzzle game made to ask my girlfriend to be my valentines. Completely customizable for additional levels and photos. Uses image processing to work with different photo resolutions.",
+            "valentine2025_title": "Be My Valentine"
+        },
+        "SPA": {
+            "portfolio": "Portafolio",
+            "about": "Acerca de mí",
+            "resume": "CV",
+            "contact": "Contacto",
+            "heroCTA": "Explorar proyectos",
+            "aboutDesc": "¡Hola! Soy Luis Pineda, un ingeniero de sistemas <span class=\"textpainter\" style=\"--c1: #ff0000; --c2: #ffffff; --c3: #ff0000\">peruano</span> y desarrollador de videojuegos que radica en Tampa, Florida. Me especializo en desarrollo con Unity, desarrollo para móviles y juegos de tragamonedas con experiencia real en la industria de casinos. Mi principal enfoque en el desarrollo es el gameplay optimizado y un código limpio y reutilizable. <br/><br/>También se de HTML, CSS y desarrollo y diseño web - ¡Yo mismo cree esta página desde 0! <br/><br/>Por favor, sientete libre de explorar mis proyectos y prototipos pasados. ¿Te interesa contar con mis habilidades para algún proyecto o empresa? ¡Conversemos!",
+            "footer": "Hecho con ❤️ por Luis Pineda Knox. Todos los derechos reservados.",
+            "portfolioDesc": "Aquí hay algunos de mis proyectos y prototipos pasados.",
+            "nda_tooltip":"Proyecto protegido por acuerdo de confidencialidad. Imágenes referenciales.",
+            "gdp_description": "Desarrollados para casinos reales en EEUU, Canadá, México, entre otros paises. Implementé nuevas funcionalidades, optimicé código preexistente y corregí errores en juegos vivos. Refactorización de varios sistemas para mejorar el desempeño y mantenimiento del código.",
+            "gdp_title": "Varios juegos tragamonedas",
+            "calleuno_description": "Juego hiper casual de salto de soga. Implementé APIs para servicios de Leaderboard, asi como físicas 2D y sistemas personalizados. Lanzado a las plataformas de prueba de Google Play Store y Apple App Store.",
+            "calleuno_title": "Kaiyu Jump",
+            "boomware_description": "Juego casual de cocina con más de 10M de descargas. Desarrollé nuevas mecánicas, eventos de tiempo limitado, optimicé la interfaz de usuario y desarrollé herramientas para manejo e inyección de data.",
+            "boomware_title": "Cafe Panic",
+            "planethopper_description": "Hecho en un par de horas como práctica de desarrollo web. Juego infinito de tipo hopper con físicas 2D absurdas.",
+            "planethopper_title": "Planet Hopper",
+            "valentine2025_description": "Juego de rompecabezas hecho para pedirle a mi novia una cita en San Valentín. Completamente personalizable para niveles y fotos adicionales. Usa procesamiento de imagen para funcionar con cualquier resolución de foto.",
+            "valentine2025_title": "Be My Valentine"
+        }
+    }
+}
