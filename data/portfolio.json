@@ -21,6 +21,26 @@
             "type": 0
         },
         {
+            "image": "./images/pictures/valentine.gif",
+            "ref": "https://github.com/weez97/BeMyValentine",
+            "company": "",
+            "year": "2025",
+            "location": "PE",
+            "description": "valentine2025_description",
+            "title": "valentine2025_title",
+            "tags": {
+                "os": [
+                    "MacOS"
+                ],
+                "tech": [
+                    "Unity",
+                    "C#"
+                ],
+                "nda": false
+            },
+            "type": 1
+        },
+        {
             "image": "./images/pictures/kaiju_jump.webp",
             "ref": "",
             "company": "Calle Uno Studios",
@@ -74,26 +94,6 @@
             "tags": {
                 "os": [
                     "WebGL"
-                ],
-                "tech": [
-                    "Unity",
-                    "C#"
-                ],
-                "nda": false
-            },
-            "type": 1
-        },
-        {
-            "image": "./images/pictures/valentine.gif",
-            "ref": "https://github.com/weez97/BeMyValentine",
-            "company": "",
-            "year": "2025",
-            "location": "PE",
-            "description": "valentine2025_description",
-            "title": "valentine2025_title",
-            "tags": {
-                "os": [
-                    "MacOS"
                 ],
                 "tech": [
                     "Unity",

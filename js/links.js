@@ -3,7 +3,7 @@ const LINKS = {
   portfolio: "/portfolio.html",
   home: "/",
   about: "/#about",
-  contact: "https://linkedin.com/in/luispineda597",
+  contact: "www.linkedin.com/in/luispineda597",
   github: "https://github.com/weez97"
 };
 
