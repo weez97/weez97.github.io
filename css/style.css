@@ -618,15 +618,15 @@ footer {
 }
 
 .portfolio__element {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
-  aspect-ratio: 4/3;
-
-  max-width: 380px;
   width: 100%;
-  justify-content: center;
+  max-width: 380px;
+
   height: 520px;
+  min-height: 0;
+  text-decoration: none;
+  justify-content: center;
 
   background: linear-gradient(
     145deg,
@@ -697,9 +697,11 @@ footer {
 }
 
 .portfolio__element--text {
+  flex: 1 1 auto;
+  min-height: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
   font-size: 1.1em;
   margin-top: 0.5em;
   text-shadow:
