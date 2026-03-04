@@ -626,6 +626,7 @@ footer {
   max-width: 380px;
   width: 100%;
   justify-content: center;
+  height: 520px;
 
   background: linear-gradient(
     145deg,
@@ -696,6 +697,9 @@ footer {
 }
 
 .portfolio__element--text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
   font-size: 1.1em;
   margin-top: 0.5em;
   text-shadow:
@@ -705,6 +709,7 @@ footer {
 
 .portfolio__element--tagLine {
   margin: 1.25rem 1rem 0.75rem;
+  margin-top: auto;
   line-height: 1.4em;
   display: flex;
   gap: 0.25rem;
