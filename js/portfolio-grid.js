@@ -67,7 +67,7 @@ async function loadPortfolio() {
         container.appendChild(fragment);
     });
 
-    loadLanguage();
+    loadLanguage(getSavedLanguage());
 }
 
 document.addEventListener("DOMContentLoaded", () => {

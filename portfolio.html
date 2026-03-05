@@ -37,7 +37,9 @@
               alt=""
               aria-hidden="true"
           /></a>
-          <a class="menu__cta" data-link="contact" data-i18n="contact">Contact</a>
+          <a class="menu__cta" data-link="contact" data-i18n="contact"
+            >Contact</a
+          >
         </nav>
 
         <!-- mobile menu -->
@@ -87,16 +89,22 @@
         </template>
       </div>
     </section>
+    <div class="lang-toggle">
+      <div class="lang-switch" id="langSwitch">
+        <div class="lang-knob"></div>
+      </div>
+    </div>
     <footer>
       <p>
         &copy; <span id="year"></span>
         <span data-i18n="footer">Luis Pineda. All rights reserved.</span>
       </p>
     </footer>
-    <script src="./js/portfolio_grid.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/year-updater.js"></script>
     <script src="./js/links.js"></script>
     <script src="./js/i18n.js"></script>
+    <script src="./js/portfolio-grid.js"></script>
+    <script src="./js/lang-toggle.js"></script>
   </body>
 </html>
