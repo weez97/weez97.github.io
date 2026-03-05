@@ -747,7 +747,7 @@ footer {
 }
 
 @media (max-width: 640px) {
-  portfolio__element {
+  .portfolio__element--text {
     font-size: 1rem;
   }
 }
