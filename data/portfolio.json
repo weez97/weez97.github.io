@@ -102,6 +102,44 @@
                 "nda": false
             },
             "type": 1
+        },
+        {
+            "image": "./images/pictures/multiplicatus.gif",
+            "ref": "https://www.legendsoflearning.com/",
+            "company": "Amazing Games Studio",
+            "year": "2019",
+            "location": "PE",
+            "description": "multiplicatus_description",
+            "title": "multiplicatus_title",
+            "tags": {
+                "os": [
+                    "WebGL"
+                ],
+                "tech": [
+                    "Unity"
+                ],
+                "nda": false
+            },
+            "type": 0
+        },
+        {
+            "image": "./images/pictures/acorns.gif",
+            "ref": "https://www.legendsoflearning.com/",
+            "company": "Amazing Games Studio",
+            "year": "2019",
+            "location": "PE",
+            "description": "acorns_description",
+            "title": "acorns_title",
+            "tags": {
+                "os": [
+                    "WebGL"
+                ],
+                "tech": [
+                    "Unity"
+                ],
+                "nda": false
+            },
+            "type": 0
         }
     ]
 }
