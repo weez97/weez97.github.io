@@ -21,9 +21,9 @@
             "planethopper_title": "Planet Hopper",
             "valentine2025_description": "Custom sliding puzzle game made to ask my girlfriend to be my valentines. Completely customizable for additional levels and photos. Uses image processing to work with different photo resolutions.",
             "valentine2025_title": "Be My Valentine",
-            "multiplicatus_description": "Educational game made for the Legends of Learning platform. Narrative and world design. Highly rated game within the platform, used over several schools in the US.",
+            "multiplicatus_description": "Educational game made for the Legends of Learning platform to teach elementary students about Multiplicative Comparison. Narrative and world design. Highly rated game within the platform, used over several schools in the US.",
             "multiplicatus_title": "Multiplicatus Comparisum",
-            "acorns_description": "Educational game made for the Legends of Learning platform. Narrative and world design. Highly rated game within the platform, used over several schools in the US.",
+            "acorns_description": "Educational game made for the Legends of Learning platform to teach elementary students about Absolute Values. Narrative design. Highly rated game within the platform, used over several schools in the US.",
             "acorns_title": "The Absolute Value of Acorns"
         },
         "SPA": {
@@ -47,9 +47,9 @@
             "planethopper_title": "Planet Hopper",
             "valentine2025_description": "Juego de rompecabezas hecho para pedirle a mi novia una cita en San Valentín. Completamente personalizable para niveles y fotos adicionales. Usa procesamiento de imagen para funcionar con cualquier resolución de foto.",
             "valentine2025_title": "Be My Valentine",
-            "multiplicatus_description": "Juego educativo desarrollado para la plataforma Legends of Learning. A cargo de la narrativa y diseño de mundo. El juego fue altamente calificado en la plataforma, usado en varias escuelas de EEUU.",
+            "multiplicatus_description": "Juego educativo desarrollado para la plataforma Legends of Learning para enseñar Comparasiones Multiplicativas a niños de primaria. A cargo de la narrativa y diseño de mundo. El juego fue altamente calificado en la plataforma, usado en varias escuelas de EEUU.",
             "multiplicatus_title": "Multiplicatus Comparisum",
-            "acorns_description": "Juego educativo desarrollado para la plataforma Legends of Learning. A cargo de la narrativa y diseño de mundo. El juego fue altamente calificado en la plataforma, usado en varias escuelas de EEUU.",
+            "acorns_description": "Juego educativo desarrollado para la plataforma Legends of Learning para enseñar Valores Absolutos a niños de primaria. A cargo del diseño narrativo. El juego fue altamente calificado en la plataforma, usado en varias escuelas de EEUU.",
             "acorns_title": "The Absolute Value of Acorns"
         }
     }
