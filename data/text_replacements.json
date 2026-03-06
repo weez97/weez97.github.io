@@ -2,6 +2,7 @@
     "texts": {
         "ENG": {
             "portfolio": "Portfolio",
+            "home": "Home",
             "about": "About me",
             "resume": "Resume",
             "contact": "Contact",
@@ -27,6 +28,7 @@
         },
         "SPA": {
             "portfolio": "Portafolio",
+            "home": "Inicio",
             "about": "Acerca de mí",
             "resume": "CV",
             "contact": "Contacto",
