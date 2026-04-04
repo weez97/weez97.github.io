@@ -3,8 +3,11 @@ const LINKS = {
   portfolio: "/portfolio.html",
   home: "/",
   about: "/#about",
-  contact: "https://www.linkedin.com/in/luispineda597",
-  github: "https://github.com/weez97"
+  contact: "/contact.html",
+  github: "https://github.com/weez97",
+  linkedin: "https://www.linkedin.com/in/luispineda597",
+  email: "mailto:luis.alonso97@gmail.com",
+  discord: "https://discordapp.com/users/354459054807973891",
 };
 
 document.querySelectorAll("[data-link]").forEach(el => {

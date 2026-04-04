@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Luis Pineda | Game Developer Portfolio</title>
+    <title>Luis Pineda | Portfolio</title>
 
     <meta
       name="description"
@@ -76,7 +76,9 @@
         <nav class="menu__nav" aria-label="Primary navigation">
           <a class="menu__link" data-link="home" data-i18n="home">Home</a>
           <a class="menu__link" data-link="about" data-i18n="about">About me</a>
-          <a class="menu__link" href="#portfolio" data-i18n="portfolio">Portfolio</a>
+          <a class="menu__link" href="#portfolio" data-i18n="portfolio"
+            >Portfolio</a
+          >
           <a
             class="menu__link"
             data-link="resume"
@@ -103,8 +105,12 @@
       <!-- mobile menu drawer -->
       <div class="menu__mobile">
         <a class="menu__mobileLink" data-link="home" data-i18n="home">Home</a>
-        <a class="menu__mobileLink" data-link="about" data-i18n="about">About me</a>
-        <a class="menu__mobileLink" href="#portfolio" data-i18n="portfolio">Portfolio</a>
+        <a class="menu__mobileLink" data-link="about" data-i18n="about"
+          >About me</a
+        >
+        <a class="menu__mobileLink" href="#portfolio" data-i18n="portfolio"
+          >Portfolio</a
+        >
         <a class="menu__mobileLink menu__mobileLink--drive" data-link="resume">
           <span data-i18n="resume">Resume</span>
           <img
@@ -119,37 +125,37 @@
         >
       </div>
     </header>
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="page">
       <div class="page__titleHolder">
         <h1 class="section__title page__title" data-i18n="portfolio">
           Portfolio
         </h1>
       </div>
       <div class="portfolio__content">
-        <div class="page__text" data-i18n="portfolioDesc">portfolioDesc</div>
+        <p class="page__text" data-i18n="portfolioDesc">portfolioDesc</p>
         <div id="portfolio__grid" class="portfolio__grid"></div>
         <template id="portfolio-template">
           <a class="portfolio__element">
             <img class="portfolio__element--picture" src="" alt="" />
-            <div class="portfolio__element--title"></div>
-            <div class="portfolio__element--location"></div>
-            <div class="portfolio__element--text"></div>
+            <h3 class="portfolio__element--title"></h3>
+            <h4 class="portfolio__element--location"></h4>
+            <p class="portfolio__element--text"></p>
             <div class="portfolio__element--tagLine"></div>
           </a>
         </template>
       </div>
+      <footer>
+        <p>
+          &copy; <span id="year"></span>
+          <span data-i18n="footer">Luis Pineda. All rights reserved.</span>
+        </p>
+      </footer>
     </section>
     <div class="lang-toggle">
       <div class="lang-switch" id="langSwitch">
         <div class="lang-knob"></div>
       </div>
     </div>
-    <footer>
-      <p>
-        &copy; <span id="year"></span>
-        <span data-i18n="footer">Luis Pineda. All rights reserved.</span>
-      </p>
-    </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/year-updater.js"></script>
     <script src="./js/links.js"></script>

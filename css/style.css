@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "ABC Ginto Discord Nord";
+  src:
+    url("ABCGintoDiscordNord-Bold.woff2") format("woff2"),
+    url("ABCGintoDiscordNord-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0;
@@ -66,8 +76,10 @@ body {
 }
 
 .menu__link:hover {
-  background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 1);
+  text-shadow:
+    2px 0 0 rgba(0, 140, 255, 0.8),
+    -2px 0 0 rgba(255, 0, 100, 0.6);
 }
 
 .menu__link--drive {
@@ -100,6 +112,9 @@ body {
 .menu__cta:hover {
   transform: translateY(-1px);
   background: rgb(255, 255, 255);
+  box-shadow:
+    2px 0 0 rgba(0, 140, 255, 0.8),
+    -2px 0 0 rgba(255, 0, 100, 0.6);
 }
 
 .menu__hamburger {
@@ -145,7 +160,7 @@ body {
   transform: translateY(-8px);
   pointer-events: none;
 
-  background-color: rgb(39, 39, 39);
+  background-color: rgba(35, 15, 61, 0.22);
 
   transition:
     opacity 180ms ease,
@@ -167,6 +182,12 @@ body {
   color: white;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(6px);
+}
+
+.menu__mobileLink:hover {
+  text-shadow:
+    2px 0 0 rgba(0, 140, 255, 0.8),
+    -2px 0 0 rgba(255, 0, 100, 0.6);
 }
 
 .menu__mobileLink--drive {
@@ -201,8 +222,8 @@ body {
   background: rgba(255, 255, 255, 1);
   transform: translateY(-2px);
   box-shadow:
-    0 0 12px rgba(255, 255, 255, 0.35),
-    0 6px 18px rgba(0, 0, 0, 0.3);
+    2px 0 0 rgba(0, 140, 255, 0.8),
+    -2px 0 0 rgba(255, 0, 100, 0.6);
 }
 
 @media (max-width: 640px) {
@@ -437,6 +458,7 @@ body {
   min-height: 100dvh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -461,7 +483,7 @@ body {
   align-items: center;
   justify-content: center;
   width: min(85vw, 1200px);
-
+  flex: 1;
   opacity: 0;
   transform: translateY(20px);
 }
@@ -552,11 +574,15 @@ body {
 
 /* #region FOOTER */
 footer {
-  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(79, 24, 131, 0.329) 100%
+  );
   color: #fff;
   text-align: center;
   position: relative;
-  bottom: 0;
   width: 100%;
   font-family: "Atkinson Hyperlegible", sans-serif;
   backdrop-filter: blur(10px);
@@ -571,54 +597,6 @@ footer {
 /* #endregion  */
 
 /* #region PORTFOLIO PAGE */
-.portfolio {
-  position: relative;
-  min-height: 100dvh;
-  width: 100%;
-  overflow: visible;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 4em;
-  gap: 24px;
-}
-
-.portfolio::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url(../images/pictures/background.webp) no-repeat center/cover;
-  transform: scale(1.05);
-  animation: portfolioBackgroundReveal 8s cubic-bezier(0.22, 1, 0.36, 1)
-    forwards;
-  z-index: 0;
-  pointer-events: none;
-}
-
-@keyframes portfolioBackgroundReveal {
-  from {
-    transform: scale(1.08);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.portfolio::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.15) 55%,
-    rgba(0, 0, 0, 0.85) 100%
-  );
-}
 
 .portfolio__content {
   position: relative;
@@ -849,7 +827,237 @@ footer {
 }
 /* #endregion */
 
+/* #region CONTACT */
+.contact__content {
+  display: flex;
+  z-index: 1;
+  width: min(85vw, 1400px);
+  min-height: 50dvh;
+  flex: 1;
+}
+
+.contact__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__group:first-child {
+  width: 50%;
+  opacity: 0;
+  animation: aboutContentReveal 1.2s ease-out forwards;
+  animation-delay: 0.45s;
+}
+
+.contact__group:last-child {
+  width: 50%;
+}
+
+.contact__button {
+  position: relative;
+  overflow: hidden;
+
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: none;
+  --btn-bg: rgba(255, 255, 255, 0.9);
+  --btn-txtColor: black;
+
+  --btn-hoverColorA: rgba(0, 140, 255, 0.8);
+  --btn-hoverColorB: rgba(255, 0, 100, 0.6);
+
+  --btn-hoverCurrentA: rgba(0, 0, 0, 0);
+  --btn-hoverCurrentB: rgba(0, 0, 0, 0);
+
+  background: transparent;
+  color: var(--btn-txtColor);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 75%;
+  border-radius: 10px;
+
+  animation: unlockHover 0s forwards;
+  animation-delay: calc(0.2s * var(--i) + 2.4s); 
+}
+
+@keyframes paintFill {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.contact__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: var(--btn-bg);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: paintFill 0.95s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+  animation-delay: calc(0.2s * var(--i) + 1.5s);
+
+  z-index: 0;
+}
+
+.contact__button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--btn-txtColor);
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: 2;
+
+  animation: textWipeCombined 1.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--i) + 2.91s);
+}
+
+.contact__button:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    2px 0 0 var(--btn-hoverCurrentA),
+    -2px 0 0 var(--btn-hoverCurrentB);
+}
+
+@keyframes unlockHover {
+  to {
+    --btn-hoverCurrentA: var(--btn-hoverColorA);
+    --btn-hoverCurrentB: var(--btn-hoverColorB);
+  }
+}
+
+@keyframes textWipeCombined {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  70% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  70.0001% {
+    transform-origin: left; /* switch instantly */
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+
+.contact__button span {
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  animation: textColorReveal 1.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i) + 2.91s);
+}
+
+@keyframes textColorReveal {
+  0%,
+  70% {
+    color: transparent;
+  }
+  70.0001%,
+  100% {
+    color: var(--btn-txtColor);
+  }
+}
+
+.contact__button.linkedinBtn {
+  --btn-bg: #0e76a8;
+  font-family: "Source Sans 3", sans-serif;
+  --btn-txtColor: white;
+  font-size: x-large;
+
+  --btn-hoverColorA: rgba(14, 118, 168, 0.8);
+  --btn-hoverColorB: rgba(255, 255, 255, 0.6);
+}
+
+.contact__button.discordBtn {
+  --btn-bg: linear-gradient(135deg, #5865f2, #404eed);
+  font-family: "ABC Ginto Discord Nord", sans-serif;
+  --btn-txtColor: white;
+  font-size: larger;
+
+  --btn-hoverColorA: #19175c;
+  --btn-hoverColorB: #e0e3ff;
+}
+
+.contact__buttonStack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .contact__content {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .contact__group:first-child,
+  .contact__group:last-child {
+    width: 100%;
+  }
+}
+/* #endregion */
+
 /* #region SHARED */
+.page {
+  position: relative;
+  min-height: 100dvh;
+  width: 100%;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url(../images/pictures/background.webp) no-repeat center/cover;
+  transform: scale(1.05);
+  animation: pageBackgroundReveal 8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes pageBackgroundReveal {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.15) 55%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
 .section__title {
   margin: 0;
   line-height: 1.2;
@@ -875,6 +1083,10 @@ footer {
   color: white;
   text-align: justify;
   margin: 2rem;
+  text-shadow:
+    black 0px 1px 2px,
+    black 0px 2px 4px,
+    black 0px 3px 6px;
 }
 
 .section__textCombo {
@@ -898,6 +1110,7 @@ footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  text-shadow: none;
 }
 
 .page__titleHolder {
@@ -907,6 +1120,7 @@ footer {
   margin-top: clamp(20px, 4vh, 60px);
   z-index: 2;
   position: relative;
+  padding-top: 4em;
 
   animation: aboutContentReveal 1.2s ease-out forwards;
 }
