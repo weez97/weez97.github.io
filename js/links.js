@@ -6,7 +6,7 @@ const LINKS = {
   contact: "/contact.html",
   github: "https://github.com/weez97",
   linkedin: "https://www.linkedin.com/in/luispineda597",
-  email: "mailto:luis.alonso97@gmail.com",
+  email: "mailto:luis.alonso97@outlook.com",
   discord: "https://discordapp.com/users/354459054807973891",
 };
 
