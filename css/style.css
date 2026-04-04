@@ -134,7 +134,7 @@ body {
 }
 
 .menu__hamburger:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .menu__hamburger img {
@@ -160,7 +160,7 @@ body {
   transform: translateY(-8px);
   pointer-events: none;
 
-  background-color: rgba(35, 15, 61, 0.22);
+  background-color: rgba(24, 12, 41, 0.89);
 
   transition:
     opacity 180ms ease,
@@ -180,7 +180,7 @@ body {
   border-radius: 10px;
   font-family: "Atkinson Hyperlegible", sans-serif;
   color: white;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(6px);
 }
 
