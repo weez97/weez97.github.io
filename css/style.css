@@ -603,6 +603,9 @@ footer {
   z-index: 1;
   width: min(85vw, 1200px);
   height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__grid {
